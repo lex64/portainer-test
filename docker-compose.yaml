@@ -42,6 +42,8 @@ services:
         container_name: redis1
         ports:
             - "6379:6379"
+        env_file:
+            - .env
     redis2:
         image: redis:7.4.0-alpine3.20
         container_name: redis2
