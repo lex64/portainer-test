@@ -43,7 +43,7 @@ services:
         ports:
             - "6379:6379"
         env_file:
-            - .env
+            - ../.env
         environment:
             - test2=true
     redis2:
